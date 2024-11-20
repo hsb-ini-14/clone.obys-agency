@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Plain Light";
+    /* font-weight: 400; */
+    color: #fff;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+/* Loader Div */
+
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #0B0B0B;
+    padding: 10vh 5vw;
+}
+.line{
+    /* background-color: red; */
+    height: fit-content;
+    overflow: hidden;
+    /* margin: -2vh; */
+    display: flex;
+    align-items: center; /* align- items should be start */
+    justify-content: flex-start;
+    gap: 2vw;
+}
+#line1-part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9vw;
+    /* padding-top: 1.2vw; this is how it should look */
+}
+
+#line1-part1 h5, #line1-part1 h6{
+    font-size: 2.2vw;
+    font-family: "Silk Serif";
+    font-weight: 100;
+}
+
+#line1-part1 h5{
+    /* background-color: red; */
+    width: 3.5vw;
+    text-align: right;
+}
+
+.line h1{
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.line h2{
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    /* animation-name: animeOne; */
+    opacity: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animeOne {
+    0%{
+        font-family: 'Plain Light';
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 1;
+    }
+    48%{
+        font-family: 'Plain Light';
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 0;
+    }
+    50%{
+        font-family: "Silk Serif";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 1;
+    }
+    100%{
+        font-family: "Silk Serif";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 0;
+    }
+    
+}
+
+/* Main Div .....................................................................................................*/
+/* This is the main div  */
+
+#main{
+    position: relative;
+    background-color: #030303;
+}
+
+/* Page_ one ....................................................................................................*/
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
