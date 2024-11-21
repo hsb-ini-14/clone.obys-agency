@@ -13,6 +13,17 @@ html, body{
     height: 100%;
     width: 100%;
 }
+/* cursor */
+#crsr{
+   height: 2.5vw;
+   width: 2.5vw;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.616);
+    position: fixed;
+    z-index: 99;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+}
 
 /* Loader Div */
 
@@ -116,4 +127,59 @@ html, body{
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.1vw 5.3vw;
+}
+
+#page1 #nav #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vw;
+}
+#page1 #nav #nav-part2 h4{
+    font-family: 'Plain Light';
+    
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.hero{
+    /* background-color: red; */
+    width: 72%;
+    margin-left: 28%;
+    height: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position:  relative;
+    z-index: 9;
+}
+.hero:nth-child(2){
+    margin-top: 18vh;
+}
+.hero h1{
+    font-size: 7.4vw;
+    text-transform: uppercase;
+    line-height: 7.4vw;
+    font-weight: 600;
+}
+.hero h2, .hero h3{
+    font-size: 7.4vw;
+    text-transform: uppercase;
+    line-height: 7.4vw;
+    font-weight: 600;
+}
+
+.hero h2:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 100;
+
 }
